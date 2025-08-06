@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+body{
+    background-color: #fcf8f5;
+    position: relative;
+    padding-left: 8rem;
+
+   
+}
+
+
+
+#menu{
+    
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    top: 3rem
+   
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.item{
+    width: 30%;
+    margin: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.item img{
+    
+    border-radius: 10px;
+}
+
+.item .add{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid hsl(14, 86%, 42%);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+}
+
+.item .add::before{
+    content: '';
+    display: inline-block; /* ou block, dependendo do layout */
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-add-to-cart.svg") no-repeat center center;
+    background-size: contain; /* ou cover, se quiser preencher */
+    margin-right: 8px; /* espaço entre a imagem e o <p> */
+    vertical-align: middle; /* para alinhar com o texto */
+}
+
+.item .add:hover{
+    color:  hsl(14, 86%, 42%);;
+}
+
+.select-quant{
+    background-color: hsl(14, 86%, 42%);
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+}
+
+.increment,
+.decrement{
+    width: 20px;
+    background: none;
+    border: 1px solid #fff;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.select-quant span{
+    color: #FFF;
+}
+
+.item h6{
+    color:#aca6a6;
+    font-size: 12px;
+}
+
+.item p{
+    font-weight: bold;
+}
+
+.item .price{
+    font-weight: 500;
+    color:  hsl(14, 86%, 42%);
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    display: flex;
+}
+
+#cart{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+}
+
+#cart h1,
+.cart-items-quant{
+    color:hsl(14, 86%, 42%);
+}
+
+.selected-item{
+    border-bottom: 1px solid #d8c7c7;
+    padding-bottom: 15px ;
+}
+.selected-item h3{
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.total-price{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-price span{
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+
+.total-price span:first-child{
+    margin: 0;
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+
+.product-price{
+    color: hsl(12, 20%, 44%);
+}
+
+.order-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.order-total p{
+    color: #aca6a6;
+}
+
+.final-price{
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+}
+
+.eco-message{
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #fcf8f5;
+}
+
+.eco-message p::before{
+    content: '';
+    display: inline-block; /* ou block, dependendo do layout */
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-carbon-neutral.svg") ;
+    background-size: contain; /* ou cover, se quiser preencher */
+     transform: translateY(20%);
+    
+   
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.cart-button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color:  hsl(14, 86%, 42%);
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.cart-button:hover{
+    opacity: 1;
+}
+
+.remove{
+    width: 36px;
+    font-size: 18px;
+    padding: 0.2rem .6rem ;
+    border: 3px solid hsl(14, 86%, 42%);
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.remove:hover{
+    opacity: 1;
+}
+
+.Total{
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+}
+
+
+
+.description{
+    margin-top: 2rem;
+}
+

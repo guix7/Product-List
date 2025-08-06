@@ -1,0 +1,163 @@
+@media (max-width:1440px){
+    .item .add{
+        font-size: 12px;
+        padding: .2rem;
+        right: 60px;
+        bottom: 80px;
+    }
+
+    .select-quant{
+       padding: .2rem; 
+       justify-content: space-evenly;
+       right: 60px;
+       bottom: 80px;
+    }
+}
+
+@media (max-width: 1222px){
+    .item .add{
+        font-size: 10px;
+        right: 50px;
+        
+    }
+    .select-quant{
+        right: 50px;
+    }
+
+    .item .add::before{
+        width: 15px;
+    }
+}
+
+@media (max-width: 1052px){
+    #menu{
+        width: 50%;
+    }
+
+    .item{
+        width: 40%;
+    }
+
+    .grid{
+        gap: 10px
+    }
+}
+
+@media (max-width: 970px){
+   body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #cart{
+    position: static;
+   }
+   
+    .grid{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu{
+        width: 60%;
+        margin-bottom: 3rem;
+    }
+
+    .item{
+        width: 90%;
+    }
+
+    .item .add{
+        right: 110px;
+        padding: .5rem;
+        font-size: 18px;
+    }
+
+    .select-quant{
+        right: 110px;
+        padding: .5rem;
+        font-size: 18px;
+    }
+
+    .item .add::before{
+        width:50px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 725px){
+    .item .add{
+        right: 80px;
+      font-size: 12px;
+        width: 50%;
+       
+    }
+
+    .item .add::before{
+        width: 15px;
+        
+    }
+
+    .select-quant{
+        right: 80px;
+      font-size: 15px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 620px){
+    .item .add{
+        right: 50px;
+    }
+
+    .select-quant{
+         right: 50px;
+    }
+}
+
+@media (max-width: 475px){
+    body{
+        align-items: center;
+    }
+    .item .add{
+        font-size: 10px;
+        width: 80%;
+        right: 15px;
+    }
+
+    .select-quant{
+        width: 80%;
+        right: 15px;
+    }
+
+    #cart{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #cart h1,
+    #cart span{
+        font-size: 18px;
+    }
+
+    .eco-message{
+        padding: 5px;
+    }
+
+    .eco-message p{
+        font-size: 12px;
+    }
+
+   .bold{
+        
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .cart-button{
+        font-size: 15px;
+    }
+}
