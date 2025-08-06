@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 725px){
+    body{
+        padding: 0;
+    }
     .item .add{
         right: 80px;
       font-size: 12px;
@@ -121,6 +124,8 @@
 @media (max-width: 475px){
     body{
         align-items: center;
+        padding: 10px;
+
     }
     .item .add{
         font-size: 10px;
